@@ -17,7 +17,7 @@ const Routing = () => {
             <Route exact path="/about">
               <About />
             </Route>
-            <Route exact path="/portfolios">
+            <Route exact path="/projects">
               <Portfolios />
             </Route>
             <Route exact path="/blogs">
