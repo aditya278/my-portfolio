@@ -1,11 +1,20 @@
 .ServicesSection {
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
     .service {
-        width: 95%;
+        width: 100%;
         background-color: #191D2B;
         border-left: 1px solid #2e344e;
         border-right: 1px solid #2e344e;
         border-bottom: 1px solid #2e344e;
-        border-top: 8px solid #2e344e;
+        border-top: 8px solid hsl(229, 26%, 24%);
         transition: all .4s ease-in-out;
         &:hover {
             border-top: 8px solid #037FFF;

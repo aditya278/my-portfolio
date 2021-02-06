@@ -17,7 +17,7 @@ const Blogs = () => {
                 <a href={blog.link} className="blog-link">{blog.title}</a>
                 <div className="blog-date">
                   <p>
-                    {blog.date + "/" + blog.month + "/" + blog.year}
+                    Published: {blog.date + "/" + blog.month + "/" + blog.year}
                   </p>
                 </div>
               </div>

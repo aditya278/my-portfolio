@@ -6,9 +6,17 @@ import MenuItems from "../Components/MenuItems";
 
 import portfolios from "../data/allPortfolios";
 
-const allCategories = ['All', ...new Set(portfolios.map(item => item.category))];
-
 const Portfolios = () => {
+
+    let mergedCategories = [];
+    portfolios.forEach(item => {
+        if(typeof item.category === 'object')
+            mergedCategories.push(...item.category);
+        else
+            mergedCategories.push(item.category);        
+    })
+
+    const allCategories = ['All', ...new Set(mergedCategories)];
     const [categories, setCaterogies] =  useState(allCategories);
     const [menuItems, setMenuItems] = useState(portfolios);
 
@@ -18,7 +26,7 @@ const Portfolios = () => {
             return;
         }
         const filterData = portfolios.filter((item) => {
-            return item.category === category;
+            return item.category.includes(category);
         });
         setMenuItems(filterData);
     }

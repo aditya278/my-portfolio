@@ -4,7 +4,23 @@
         height: 100vh;
         background-color: #191D2B;
         position: fixed;
+        z-index: 11;
         border-right: 1px solid #2e344e;
+        transform-origin: left;
+        @media screen and (max-width: 1000px) {
+            transform: translateX(-100%);
+            transition: all .2s ease-in-out;
+            width: 20%;
+        }
+        @media screen and (max-width: 411px) {
+            width: 50%;
+        }
+    }
+
+    .nav-toggle {
+        @media screen and (max-width: 1000px) {
+            transform: translateX(0);
+        }
     }
 
     .main-content {
@@ -17,6 +33,50 @@
         position: relative;
         .content {
             margin: 5rem 10rem;
+            @media screen and (max-width: 1100px) {
+                margin: 5rem 10rem;
+            }
+            @media screen and (max-width: 768px) {
+                margin: 5rem 6rem;
+            }
+            @media screen and (max-width: 411px) {
+                margin: 5rem 3rem;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.nav-btn {
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 5%;
+    width: 4rem;
+    height: 4rem;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    .line-1, .line-2, .line-3 {
+        height: 0.4rem;
+        width: 100%;
+        background-color: #3858CC;
+        pointer-events: none;
+        display:none;
+        border-radius: 20px;
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        display: block;
+        .line-1, .line-2, .line-3 {
+            display:block;
         }
     }
 }
