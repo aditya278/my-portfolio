@@ -3,12 +3,16 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 const config = require('./config');
+const path = require('path');
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    console.log('Hello');
-    return res.status(200).json({message: 'Hey'});
+app.use(express.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, "..", "frontend", "build")));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, "..","frontend", "build", "index.html"));
 });
 
 app.post('/api/contact-me', (req, res) => {

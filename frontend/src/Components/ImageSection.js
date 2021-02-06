@@ -1,8 +1,17 @@
 import React from 'react'
 
 import about from '../img/Aditya2.jpg';
+import resume from '../data/resume.pdf';
 
 const ImageSection = () => {
+
+    const clickHandler = () => {
+        window.open(
+            resume,
+            '_blank'
+          );
+    }
+
     return (
         <div className="ImageSection">
             <div className="img">
@@ -29,7 +38,7 @@ const ImageSection = () => {
                         <p>: Hindi, English</p>
                     </div>
                 </div>
-                <button className="btn">Download Resume</button>
+                <button className="btn" onClick={clickHandler} >Download Resume</button>
             </div>
         </div>
     )
