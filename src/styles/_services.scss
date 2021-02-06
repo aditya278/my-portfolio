@@ -1,5 +1,5 @@
 .ServicesSection {
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 2600px) {
         width: 100%;
         &:not(:last-child) {
             margin-bottom: 2rem;
@@ -19,7 +19,9 @@
         &:hover {
             border-top: 8px solid #037FFF;
         }
-
+        .service-img {
+            width: 10rem;
+        }
         .service-content {
             padding: 1rem;
             .service-title {
@@ -37,6 +39,19 @@
                     height: 1px;
                     background-color: #2e344e;
                 }
+            }
+            .service-info {
+                display: flex;
+                justify-content: space-between;
+            }
+            .service-date {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            .service-text {
+                font-size: 1.2rem;
+                font-weight: 300;
+                padding-bottom: 1rem;
             }
         }
     }

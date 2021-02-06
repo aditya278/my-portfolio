@@ -11,7 +11,10 @@ const HomePage = () => {
                     <span> Aditya Shukla.</span>
                 </h1>
                 <p className="h-sub-text">
-                    Excepteur nulla amet exercitation deserunt et cupidatat officia ex exercitation duis ex. Amet velit do ex labore officia do minim ea consequat nostrud amet. Ex non reprehenderit minim ipsum laborum magna reprehenderit veniam. Id et aliquip tempor nisi Lorem pariatur elit aliquip incididunt ut ullamco. Consequat ad labore sunt nisi esse sit sint consequat proident aliquip culpa non.
+                    A Software Engineer with 2.5 Years of Industry as well as Freelance Experience of Developing Scalable Desktop and Web Applications as well as Video Games.
+                </p>
+                <p className="h-sub-text">
+                    A Coding Bootcamp Graduate with Extensive background in JavaScript, Python and C#. Specializes in <b>Full Stack Web Development</b> with <b>NodeJs</b> and <b>ReactJs</b>, to develop and deploy websites from the ground up.
                 </p>
                 <div className="icons">
                     <BrandIcons />
