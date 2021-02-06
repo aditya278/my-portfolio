@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,21 +12,21 @@ import {
 const BrandIcons = () => {
   return (
     <>
-      <Link className="icon-link">
+      <a className="icon-link" href="https://twitter.com/WhoAdityaShukla" target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="icon twt" icon={faTwitter} />
-      </Link>
-      <Link className="icon-link">
+      </a>
+      <a className="icon-link" href="https://github.com/aditya278" target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="icon gh" icon={faGithub} />
-      </Link>
-      <Link className="icon-link">
+      </a>
+      <a className="icon-link" href="https://linkedin.com/in/aditya278" target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="icon lin" icon={faLinkedin} />
-      </Link>
-      <Link className="icon-link">
+      </a>
+      <a className="icon-link" href="https://medium.com/@aditya.shukla278" target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="icon med" icon={faMediumM} />
-      </Link>
-      <Link className="icon-link">
+      </a>
+      <a className="icon-link" href="https://dev.to/aditya278" target="_blank" rel="noreferrer">
         <FontAwesomeIcon className="icon dev" icon={faDev} />
-      </Link>
+      </a>
     </>
   );
 };
