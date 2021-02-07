@@ -6,10 +6,11 @@ import resume from '../data/resume.pdf';
 const ImageSection = () => {
 
     const clickHandler = () => {
-        window.open(
-            resume,
-            '_blank'
-          );
+        const a = document.createElement("a");
+        a.href = resume;
+        a.download = "Aditya-Resume";
+        a.target = "_blank";
+        a.click();
     }
 
     return (
