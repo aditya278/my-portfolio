@@ -54,3 +54,11 @@ span {
         font-size: 80%
     }
 }
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 60%;
+    }
+    h2, h3 {
+        font-size: 70%
+    }
+}

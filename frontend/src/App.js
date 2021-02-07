@@ -16,10 +16,10 @@ function App() {
       <div className={`sidebar${navToggle ? ' nav-toggle' : ''}`}>
         <Navbar />
       </div>
-      <div className="nav-btn" onClick={navClick}>
-        <div className="line-1"></div>
-        <div className="line-2"></div>
-        <div className="line-3"></div>
+      <div className={`nav-btn`} onClick={navClick}>
+        {
+          navToggle ? <i className="fa fa-times fa-3x" aria-hidden="true"></i> : <i className="fas fa-bars fa-3x"></i>
+        }
       </div>
       <div className="main-content">
         <div className="content">
