@@ -1,6 +1,6 @@
 import React from 'react'
 
-import about from '../img/Aditya2.jpg';
+import about from '../img/pic2.png';
 import resume from '../data/resume.pdf';
 
 const ImageSection = () => {
